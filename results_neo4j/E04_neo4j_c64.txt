@@ -1,0 +1,12 @@
+Experiment: E04
+DB: neo4j
+Concurrency: 64
+Total Requests: 10000
+Duration (sec): 4.5122
+p50: 10.3551
+p95: 28.1984
+p99: 47.8216
+avg: 22.0332
+min: 0.4223
+max: 2213.1336
+throughput_qps: 2216.2131

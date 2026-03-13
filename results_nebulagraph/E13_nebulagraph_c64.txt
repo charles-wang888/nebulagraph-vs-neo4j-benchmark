@@ -1,0 +1,12 @@
+Experiment: E13
+DB: nebulagraph
+Concurrency: 64
+Total Requests: 10000
+Duration (sec): 6.9303
+p50: 43.6803
+p95: 49.6263
+p99: 53.8264
+avg: 44.1201
+min: 4.0173
+max: 87.9681
+throughput_qps: 1442.9483

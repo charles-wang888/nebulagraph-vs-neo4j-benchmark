@@ -1,0 +1,26 @@
+neo4j:
+  uri: "<替换为你的 Neo4j URI，例如 bolt://localhost:7687>"
+  user: "<替换为你的 Neo4j 用户名>"
+  password: "<替换为你的 Neo4j 密码>"
+
+nebulagraph:
+  # GraphD 地址与端口（根据你的部署调整）
+  host: "<替换为 GraphD 地址>"
+  port: <替换为 GraphD 端口>
+  user: "<替换为 GraphD 用户名>"
+  password: "<替换为 GraphD 密码>"
+  space: "<这个和在NebulaGraph创建的Space匹配，例如 benchmark_space>"
+  # 连接池大小，需 >= 最大并发（实验中有 64/128），否则会报 No available connection
+  max_connection_pool_size: 150
+
+benchmark:
+  # 每个实验的总请求数量（单库）
+  requests_per_experiment: 10000
+  # 并发度列表，对应矩阵中 1 / 4 / 16 / 64 等
+  concurrency_levels: [1, 4, 16, 64]
+  # 随机种子，保证可复现
+  random_seed: 42
+
+results:
+  dir: "results"
+
